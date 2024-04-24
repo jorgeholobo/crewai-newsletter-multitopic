@@ -5,10 +5,10 @@ from crewai import Task
 class AINewsLetterTasks():
     def fetch_news_task(self, agent):
         return Task(
-            description=f'Fetch top AI news stories from the past 24 hours. The current time is {datetime.now()}.',
+            description=f'Fetch the top news stories for the day for the topics of economics, credit, agriculture, and real estate, in Brazil. The current time is {datetime.now()}.',
             agent=agent,
             async_execution=True,
-            expected_output="""A list of top AI news story titles, URLs, and a brief summary for each story from the past 24 hours. 
+            expected_output="""A list of top news story titles, URLs, and a brief summary for each story from the past 24 hours. 
                 Example Output: 
                 [
                     {  'title': 'AI takes spotlight in Super Bowl commercials', 

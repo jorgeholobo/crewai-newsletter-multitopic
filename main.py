@@ -13,9 +13,8 @@ tasks = AINewsLetterTasks()
 
 # Initialize the OpenAI GPT-4 language model
 OpenAIGPT4 = ChatOpenAI(
-    model="gpt-4"
+    model="gpt-3.5-turbo"
 )
-
 
 # Instantiate the agents
 editor = agents.editor_agent()
